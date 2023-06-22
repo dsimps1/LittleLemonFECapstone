@@ -1,10 +1,11 @@
 import React from 'react'
+import './main.css'
 
 const Main = () => {
     return (
-      <main>
+      <section id="main">
         Main
-      </main>
+      </section>
     )
   }
 

@@ -1,0 +1,39 @@
+.nav__container {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    padding: 1rem 1rem;
+    text-align: center;
+    height: 10vh;
+    color: var(--color-primary);
+}
+
+img {
+    width: 10rem;
+}
+
+nav {
+    text-align: center;
+    margin: .5rem;
+    height: 50%;
+    overflow: hidden;
+    background-color: var(--color-white);
+}
+
+
+nav a {
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    color: var(--color-primary);
+    font-size: 1.1rem;
+    font-weight: bold;
+    }
+
+/*================= MEDIA QUERIES (MEDIUM DEVICES) ================*/
+@media screen and (max-width: 1024px) {
+    .nav__container {
+        display: grid;
+        grid-template-columns: 25% 75%;
+        gap: 0;
+    }
+}

@@ -1,0 +1,119 @@
+#main {
+    height: 80vh;
+    padding-top: 2rem;
+    overflow: hidden;
+    background-color: var(--color-white);
+}
+
+.main__container {
+    display: grid;
+    grid-template-rows: 1rem 3rem;
+    text-align: center;
+    height: 100%;
+    position: relative;
+    color: var(--color-primary);
+    gap: 15%;
+}
+
+.container__header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container__header .btn {
+    justify-self: right;
+    align-self: center;
+}
+
+
+.menu__cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-self: center;
+    height: 27rem;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.menu__card {
+    display: grid;
+    grid-template-rows: 40% 55%;
+    width: 20rem;
+    height: 27rem;
+    flex-shrink: 0;
+    background-color: var(--color-card);
+    border-radius: 16px 16px 0 0;
+}
+
+.menu__card > img {
+    border-radius: 16px 16px 0 0;
+    width: 20rem;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card__content {
+    display: grid;
+    grid-template-rows: 3rem 9rem 2rem;
+    padding: 1rem;
+    height: 100%;
+}
+
+.card__header {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    text-align: left;
+}
+
+.card__title {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.card__price {
+    font-family: Karla;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: Var(--color-primary-variant);
+}
+
+.main__container p {
+    text-align: left;
+    font-size: 16px;
+    font-family: Karla;
+    font-weight: 400;
+    word-wrap: break-word
+}
+
+.card__footer {
+    display: flex;
+    text-align: left;
+    gap: 1rem;
+}
+
+.card__footer h3 {
+    font-size: 22px;
+    font-family: Karla;
+    font-weight: Bold;
+    word-wrap: break-word
+}
+
+.card__footer img {
+    width: 20px;
+}
+
+.main__container h1 {
+    color: var(--color-black);
+    font-weight: bold;
+}
+
+
+
+/*================= MEDIA QUERIES (MEDIUM DEVICES) ================*/
+@media screen and (max-width: 1024px) {
+    .main__container {
+        display: grid;
+        grid-template-columns: 25% 50%;
+        gap: 0;
+    }
+}

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useMatch, useResolvedPath } from 'react-router-dom'
 import './nav.css'
 import {useState} from 'react'
 import LOGO from '../../assets/Logo.svg'
@@ -11,15 +11,28 @@ const Nav = () => {
         <div className="container nav__container">
         <img src={LOGO} alt="Little Lemon Logo" />
           <nav>
-            <Link to="" onClick={() => setActiveNav('')} className={activeNav === '' ? 'active': ''}>Home</Link>
-            <a href="/#about" onClick={() => setActiveNav('/#about')} className={activeNav === '/#about' ? 'active': ''}>About</a>
-            <a href="menu" onClick={() => setActiveNav('menu')} className={activeNav === 'menu' ? 'active': ''}>Menu</a>
-            <Link to="reservation" onClick={() => setActiveNav('reservation')} className={activeNav === 'reservation' ? 'active': ''}>Reservation</Link>
-            <Link to="order" onClick={() => setActiveNav('order-online')} className={activeNav === 'order-online' ? 'active': ''}>Order Online</Link>
-            <a href="login" onClick={() => setActiveNav('login')} className={activeNav === 'login' ? 'active': ''}>Login</a>
+            <CustomLink to="">Home</CustomLink>
+            <a href="/#about" >About</a>
+            <CustomLink to="menu">Menu</CustomLink>
+            <CustomLink to="reservation">Reservation</CustomLink>
+            <CustomLink to="order">Order Online</CustomLink>
+            <CustomLink to="login">Login</CustomLink>
           </nav>
         </div>
       </section>
+    )
+  }
+
+  // Use the function below to the set the current nav link to active. This is used to format the nav link for the current page.
+  function CustomLink({ to, children, ...props}) {
+    const resolvedPath = useResolvedPath(to)
+    const isActive = useMatch({ path: resolvedPath.pathname, end: true })
+    return (
+      <li className={ isActive ? "active" : ""}>
+        <Link to={to} {...props}>
+          {children}
+        </Link>
+      </li>
     )
   }
 

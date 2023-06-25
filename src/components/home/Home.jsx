@@ -12,7 +12,6 @@ const Home = () => {
       <Main />
       <Testimonials/>
       <About/>
-      <Footer />
     </div>
   );
 }

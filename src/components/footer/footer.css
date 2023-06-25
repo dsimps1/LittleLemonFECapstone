@@ -25,9 +25,15 @@
 .footer__socials,
 .footer__contact,
 .footer__permalinks,
-a {
+.footer__container a,
+.footer__container nav
+{
     color: var(--color-white);
     text-align: left;
+}
+
+.footer__container nav {
+    display: inline-block;
 }
 
 .footer__container h3{

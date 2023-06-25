@@ -1,5 +1,6 @@
 import React from 'react'
 import './footer.css'
+import { Link, useMatch, useResolvedPath } from 'react-router-dom'
 import FOOTERIMG from '../../assets/restaurant chef B.jpg'
 
 const Footer = () => {
@@ -12,15 +13,16 @@ const Footer = () => {
 
           <div className='footer__permalinks'>
           <h3>Doormat Navigation</h3>
-            <ul>
-              <li><a href='#'>Home</a></li>
-              <li><a href='#about'>About</a></li>
-              <li><a href='#experience'>Experience</a></li>
-              <li><a href='#services'>Services</a></li>
-              <li><a href='#portfolio'>Portfolio</a></li>
-              <li><a href='#testimonials'>Testimonials</a></li>
-              <li><a href='#contact'>Contact</a></li>
-            </ul>
+            <nav>
+              <ul>
+              <li><Link to="">Home</Link></li>
+              <li><a href="/#about" >About</a></li>
+              <li><Link to="menu">Menu</Link></li>
+              <li><Link to="reservation">Reservation</Link></li>
+              <li><Link to="order">Order Online</Link></li>
+              <li><Link to="login">Login</Link></li>
+              </ul>
+            </nav>
           </div>
 
           <div className='footer__contact'>

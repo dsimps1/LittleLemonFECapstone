@@ -11,23 +11,35 @@ img {
     width: 10rem;
 }
 
-nav {
+.nav__container nav {
+    display: flex;
     text-align: center;
-    margin: .5rem;
+    align-items: center;
+    margin: auto;
     height: 50%;
     overflow: hidden;
     background-color: var(--color-white);
 }
 
 
-nav a {
-    background: transparent;
+.nav__container a
+{
     padding: 0.9rem;
-    border-radius: 50%;
     color: var(--color-primary);
     font-size: 1.1rem;
     font-weight: bold;
-    }
+    text-transform: uppercase;
+    } 
+
+.nav__container nav a:hover {
+    color: var(--color-primary-variant);
+}
+
+.active a {
+    color: var(--color-primary-variant);
+  }
+
+
 
 /*================= MEDIA QUERIES (MEDIUM DEVICES) ================*/
 @media screen and (max-width: 1024px) {

@@ -24,6 +24,7 @@
   --color-light: #FBDABB;
   --color-black: #000000;
   --color-card: #ececec;
+  --color-button-hover: #3d4044; 
 
   --container-width-lg: 80%;
   --container-width-md: 85%;
@@ -81,7 +82,7 @@ a {
 }
 
 a:hover {
-  color: var(--color-white);
+  color: var(--color-primary-variant);
 }
 
 .btn {
@@ -100,8 +101,8 @@ a:hover {
 }
 
 .btn:hover {
-  background: var(--color-white);
-  color: var(--color-bg);
+  background: var(--color-button-hover);
+  color: var(--color-primary-variant);
   border-color: transparent;
 }
 

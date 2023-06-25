@@ -1,0 +1,14 @@
+#order {
+    height: 35vh;
+    padding-top: 3rem;
+    background-color: var(--color-primary);
+}
+
+.order__container {
+    display: grid;
+    text-align: center;
+    height: 100%;
+    position: relative;
+    color: var(--color-white);
+    gap: 30px;
+}

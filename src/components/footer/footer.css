@@ -1,5 +1,5 @@
 #footer {
-    height: 50vh;
+    height: 35vh;
     padding-top: 3rem;
     background-color: var(--color-primary);
 }
@@ -34,4 +34,15 @@ a {
     font-family: Karla;
     font-weight: 700;
     color: var(--color-primary-variant);
+}
+
+.footer__copyright {
+    height: 5rem;
+    text-align: center;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.footer__copyright > p {
+    font-size: 14px;
 }

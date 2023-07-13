@@ -13,7 +13,7 @@ const Header = () => {
               focused on traditional recipes served with a
                 modern twist.
             </p>
-            <a href='#reservations' className='btn btn-primary'>Reserve a Table</a>
+            <a href='reservation' className='btn btn-primary'>Reserve a Table</a>
           </article>
           <div className="header__photo">
             <img src={HEADIMG} alt="Food on a platter" />

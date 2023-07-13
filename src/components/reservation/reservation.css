@@ -1,11 +1,13 @@
 #reservation {
-    height: 35vh;
+    height: 70vh;
     padding-top: 3rem;
     background-color: var(--color-primary);
 }
 
 .reservation__container {
     display: grid;
+    grid-template-columns: 1fr;
+    align-self: center;
     text-align: center;
     height: 100%;
     position: relative;

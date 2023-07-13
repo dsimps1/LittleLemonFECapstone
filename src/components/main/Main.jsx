@@ -11,7 +11,7 @@ const Main = () => {
         <div className="container main__container">
           <div className="container__header">
             <h1>This weeks specials!</h1>
-            <a href='#menu' className='btn btn-primary'>Online Menu</a>
+            <a href='menu' className='btn btn-primary'>Online Menu</a>
           </div>
 
           <div className="menu__cards">
